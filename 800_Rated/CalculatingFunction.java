@@ -3,21 +3,19 @@ import java.util.*;
 public class CalculatingFunction {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        long n = scanner.nextLong();
 
-        int ans = function(n);
+        long ans = function(n);
         System.out.println(ans);
     }
 
-    public static int function(int n) {
-        int ans = 0;
+    public static long function(long n) {
+        long ans = 0;
 
-        for (int i = 1; i <= n; i++) {
-            if (i % 2 == 1) {
-                ans -= i;
-            } else {
-                ans += i;
-            }
+        if (n % 2 == 0) {
+            ans += (n / 2);
+        } else {
+            ans -= ((n + 1) / 2);
         }
 
         return ans;
