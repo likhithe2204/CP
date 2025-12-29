@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class QueueAtTheSchool {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         Scanner scanner = new Scanner(System.in);
         int numOfChildren = scanner.nextInt();
         int time = scanner.nextInt();
